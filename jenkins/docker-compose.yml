@@ -1,0 +1,8 @@
+jenkins:
+  container_name: jenkins
+  image: agileworks/jenkins-workshop
+  ports:
+    - 8080:8080
+    - 50000:50000
+  volumes:
+    - ./JENKINS_HOME:/var/jenkins
