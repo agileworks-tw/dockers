@@ -1,16 +1,13 @@
-jenkins:
-  container_name: jenkins
-  image: agileworks/jenkins
+jenkins-workshop:
+  container_name: jenkins-workshop
+  image: agileworks/jenkins-workshop
   ports:
-    - 9080:8080
-    - 50000:50000
     - 9080:8080
     - 50000:50000
     - 9082:9082
     - 8000:8000
     - 1337:1337
     - 3000:3000
-
 
   volumes:
     - ./JENKINS_HOME:/jenkins
